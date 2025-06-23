@@ -14,6 +14,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
 
 /**
  * @author HP ProBook
@@ -34,6 +35,7 @@ public class EmployeeCRUDSteps extends Base {
 
 	}
 
+	
 	@Given("^Navigate to PIM after log in with Admin user$")
 	public void navigate_to_PIM_after_log_in_with_Admin_user() throws Throwable {
 		scenario.write("Starting the Orange HRM Application");
@@ -47,10 +49,11 @@ public class EmployeeCRUDSteps extends Base {
 		scenario.write("Navigating to the PIM page ....");
 		objAddEmployeePage = new AddEmployeePage(driver, scenario);
 		WaitMethods.staticWait(5000);
-		objAddEmployeePage.navigateToPIMPage();
+		String actualPIMPageTittle = objAddEmployeePage.navigateToPIMPage();
 		WaitMethods.staticWait(5000);
 		scenario.write("Taking a Screenshot.....");
 		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+		Assert.assertEquals("PIM", actualPIMPageTittle);
 	}
 
 	@When("^I Add employee with  first name as \"([^\"]*)\" and mname as \"([^\"]*)\" and lName as \"([^\"]*)\"$")
@@ -71,10 +74,11 @@ public class EmployeeCRUDSteps extends Base {
 		scenario.write("Navigating to Employee List Page.....");
 		objAddEmployeePage.navigateToEmployeeListPage();
 		scenario.write("Searching the newly added amp in the list....");
-		objAddEmployeePage.searchEmployeeByname(fName, mName, Lname);
+		String actualSearchedFNameandLName = objAddEmployeePage.searchEmployeeByname(fName, mName, Lname);
 		WaitMethods.staticWait(10000);
 		scenario.write("Taking a Screenshot.....");
 		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
+		Assert.assertEquals(fName + " " + mName, actualSearchedFNameandLName);
 
 	}
 

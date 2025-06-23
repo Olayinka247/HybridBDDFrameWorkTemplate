@@ -121,11 +121,23 @@ public class AddEmployeePage {
 		ElementActions.clickElement(driver, saveButton, scenario);
 	}
 
+	/**
+	 * Method to navigate to the employee list page
+	 */
 	public void navigateToEmployeeListPage() {
 
 		ElementActions.clickElement(driver, employeeListlink, scenario);
 	}
 
+	
+	/**
+	 * @param fName
+	 * @param mName
+	 * @param lName
+	 * @return
+	 * 
+	 * Method to seach employee by name
+	 */
 	public String searchEmployeeByname(String fName, String mName, String lName) {
 
 		ElementActions.sendKeys(driver, searchbyEmpNameField, scenario, fName + " " + mName + " " + lName);
@@ -136,6 +148,13 @@ public class AddEmployeePage {
 
 	}
 
+	/**
+	 * @param fNameAppendValue
+	 * @param mNameAppendValue
+	 * @param lNameAppendValue
+	 * 
+	 * Method to update already added emplyee details
+	 */
 	public void editEmpInfo(String fNameAppendValue, String mNameAppendValue, String lNameAppendValue) {
 		ElementActions.clickElement(driver, editEmployeeButton, scenario);
 		WaitMethods.staticWait(5000);
@@ -149,6 +168,10 @@ public class AddEmployeePage {
 
 	}
 	
+	/**
+	 * Method to delete the searched employee
+	 * 
+	 */
 	public void deleteSearchedEmp(){
 		
 		ElementActions.clickElement(driver, deleteEmpButton, scenario);
