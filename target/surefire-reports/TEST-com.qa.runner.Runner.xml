@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="105.401" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="103.649" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
@@ -64,11 +64,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given Navigate to PIM after log in with Admin user" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.002"/>
+  <testcase name="Given Navigate to PIM after log in with Admin user" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.001"/>
   <testcase name="When I Add employee with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
-  <testcase name="Then I  verify employeeAdded in list with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.001"/>
+  <testcase name="Then I  verify employeeAdded in list with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
   <testcase name="When I click on Edit button and update below values and save the Data" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
   <testcase name="Then I search the employee and ensure that it is searched using below values" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
   <testcase name="And I select and Delete the Updated Employee and verify employee is not  in search result" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
-  <testcase name="| AutU1Fname | AutU1Mname | AutU1Lname |" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.78"/>
+  <testcase name="| AutU1Fname | AutU1Mname | AutU1Lname |" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.747"/>
 </testsuite>

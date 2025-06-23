@@ -124,7 +124,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 101100,
+  "duration": 309100,
   "status": "passed"
 });
 formatter.scenario({
@@ -237,7 +237,7 @@ formatter.write("Navigating to the PIM page ....");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 26893827900,
+  "duration": 25955289800,
   "status": "passed"
 });
 formatter.match({
@@ -261,7 +261,7 @@ formatter.write("Navigating to the add new employee page .......");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 11814721600,
+  "duration": 11572965400,
   "status": "passed"
 });
 formatter.match({
@@ -286,7 +286,7 @@ formatter.write("Searching the newly added amp in the list....");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "duration": 11861646000,
+  "duration": 11484138600,
   "status": "passed"
 });
 formatter.match({
@@ -296,7 +296,7 @@ formatter.write("Editing the searched employee details....");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded4.png");
 formatter.result({
-  "duration": 31635656500,
+  "duration": 31456373900,
   "status": "passed"
 });
 formatter.match({
@@ -307,7 +307,7 @@ formatter.write("Searching the Updated employee Info.....");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded5.png");
 formatter.result({
-  "duration": 11563182600,
+  "duration": 11616590900,
   "status": "passed"
 });
 formatter.match({
@@ -317,12 +317,12 @@ formatter.write("Deleting the searched employee.....");
 formatter.write("Taking a Screenshot.....");
 formatter.embedding("image/png", "embedded6.png");
 formatter.result({
-  "duration": 10496050900,
+  "duration": 10492689500,
   "status": "passed"
 });
 formatter.write("Closing the Application");
 formatter.after({
-  "duration": 777736700,
+  "duration": 748230100,
   "status": "passed"
 });
 });
