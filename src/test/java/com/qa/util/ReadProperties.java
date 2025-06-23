@@ -16,6 +16,7 @@ public class ReadProperties {
 	
 	/**
 	 * @return this method will return the object of properties class
+	 * 
 	 */
 	public static Properties loadProperties() {
 		// Open the File
