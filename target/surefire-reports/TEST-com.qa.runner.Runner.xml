@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="14.052" tests="7" errors="2" skipped="5" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="236.718" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
     <property name="java.vm.version" value="25.271-b09"/>
-    <property name="browser" value="edge"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\HP ProBook\workspace\BDDCucumberFramework"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -46,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_271\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dbrowser=edge"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,101 +64,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given Navigate to PIM after log in with Admin user" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <error message="invalid session id&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;OLAS-PROBOOK&apos;, ip: &apos;10.0.11.92&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b10dbc9b6ce07e4a2d08677b13239ad3" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-</error>
-    <system-out><![CDATA[Feature: Employee CRUD and Search Operations
-
-  @employeeCRUD5TCS
-  Scenario Outline: I am able to add edit and search and delete the  employee                                        # EmployeeCRUD.feature:4
-    Given Navigate to PIM after log in with Admin user
-    When I Add employee with  first name as "<fName>" and mname as "<mName>" and lName as "<Lname>"
-    Then I  verify employeeAdded in list with  first name as "<fName>" and mname as "<mName>" and lName as "<Lname>"
-    When I click on Edit button and update below values and save the Data
-    Then I search the employee and ensure that it is searched using below values
-    And I select and Delete the Updated Employee and verify employee is not  in search result
-
-    Examples: 
-Starting the Orange HRM Application
-Loggin into the Orange HRM Application
-There is some Exception in Fluent Wait checking--  invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: MicrosoftEdge=137.0.3296.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-*** Element info: {Using=xpath, value=//input[@name ='username']}
- Error on typeing the text in element after wating !
-There is some Exception in Fluent Wait checking--  invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-*** Element info: {Using=xpath, value=//input[@name ='password']}
- Error on typeing the text in element after wating !
-There is some Exception in Fluent Wait checking--  invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-*** Element info: {Using=xpath, value=//button[@type='submit']}
- Error on clicking the element after wating !
-There is some Exception in Fluent Wait checking--  invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-*** Element info: {Using=xpath, value=//h6[text()='Dashboard']}
- Error on fetching  the text in element after wating !
-]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting Microsoft Edge WebDriver 137.0.3296.93 (114b4a913acdf3a2a069fc6fc8aa53765cb49610) on port 13592
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-msedgedriver was started successfully on port 13592.
-Jun 24, 2025 3:51:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="| AutU1Fname | AutU1Mname | AutU1Lname |" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <error message="invalid session id&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;OLAS-PROBOOK&apos;, ip: &apos;10.0.11.92&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b10dbc9b6ce07e4a2d08677b13239ad3" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OLAS-PROBOOK', ip: '10.0.11.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\HPPROB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10dbc9b6ce07e4a2d08677b13239ad3
-</error>
-  </testcase>
-  <testcase name="When I Add employee with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then I  verify employeeAdded in list with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="When I click on Edit button and update below values and save the Data" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then I search the employee and ensure that it is searched using below values" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="And I select and Delete the Updated Employee and verify employee is not  in search result" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="Given Navigate to PIM after log in with Admin user" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.001"/>
+  <testcase name="When I Add employee with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
+  <testcase name="Then I  verify employeeAdded in list with  first name as &quot;AutU1Fname&quot; and mname as &quot;AutU1Mname&quot; and lName as &quot;AutU1Lname&quot;" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
+  <testcase name="When I click on Edit button and update below values and save the Data" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
+  <testcase name="Then I search the employee and ensure that it is searched using below values" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
+  <testcase name="And I select and Delete the Updated Employee and verify employee is not  in search result" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0"/>
+  <testcase name="| AutU1Fname | AutU1Mname | AutU1Lname |" classname="| AutU1Fname | AutU1Mname | AutU1Lname |" time="0.823"/>
 </testsuite>

@@ -124,7 +124,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 251900,
+  "duration": 158900,
   "status": "passed"
 });
 formatter.scenario({
@@ -232,18 +232,13 @@ formatter.match({
 });
 formatter.write("Starting the Orange HRM Application");
 formatter.write("Loggin into the Orange HRM Application");
-formatter.write("There is some Exception in Fluent Wait checking--  invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: MicrosoftEdge\u003d137.0.3296.93)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OLAS-PROBOOK\u0027, ip: \u002710.0.11.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\\Users\\HPPROB~1\\AppData\\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b10dbc9b6ce07e4a2d08677b13239ad3\n*** Element info: {Using\u003dxpath, value\u003d//input[@name \u003d\u0027username\u0027]}");
-formatter.write(" Error on typeing the text in element after wating !");
-formatter.write("There is some Exception in Fluent Wait checking--  invalid session id\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OLAS-PROBOOK\u0027, ip: \u002710.0.11.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\\Users\\HPPROB~1\\AppData\\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b10dbc9b6ce07e4a2d08677b13239ad3\n*** Element info: {Using\u003dxpath, value\u003d//input[@name \u003d\u0027password\u0027]}");
-formatter.write(" Error on typeing the text in element after wating !");
-formatter.write("There is some Exception in Fluent Wait checking--  invalid session id\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OLAS-PROBOOK\u0027, ip: \u002710.0.11.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\\Users\\HPPROB~1\\AppData\\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b10dbc9b6ce07e4a2d08677b13239ad3\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027]}");
-formatter.write(" Error on clicking the element after wating !");
-formatter.write("There is some Exception in Fluent Wait checking--  invalid session id\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OLAS-PROBOOK\u0027, ip: \u002710.0.11.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\\Users\\HPPROB~1\\AppData\\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b10dbc9b6ce07e4a2d08677b13239ad3\n*** Element info: {Using\u003dxpath, value\u003d//h6[text()\u003d\u0027Dashboard\u0027]}");
-formatter.write(" Error on fetching  the text in element after wating !");
+formatter.embedding("image/png", "embedded0.png");
+formatter.write("Navigating to the PIM page ....");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 13160776000,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: invalid session id\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OLAS-PROBOOK\u0027, ip: \u002710.0.11.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64896}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\\Users\\HPPROB~1\\AppData\\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b10dbc9b6ce07e4a2d08677b13239ad3\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat com.qa.util.CaptureScreenshot.captureImage(CaptureScreenshot.java:21)\r\n\tat com.qa.stepdefinations.EmployeeCRUDSteps.navigate_to_PIM_after_log_in_with_Admin_user(EmployeeCRUDSteps.java:48)\r\n\tat ✽.Given Navigate to PIM after log in with Admin user(EmployeeCRUD.feature:5)\r\n",
-  "status": "failed"
+  "duration": 50258818600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -262,8 +257,12 @@ formatter.match({
   ],
   "location": "EmployeeCRUDSteps.i_Add_employee_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
+formatter.write("Navigating to the add new employee page .......");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 41712535100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -282,30 +281,48 @@ formatter.match({
   ],
   "location": "EmployeeCRUDSteps.i_verify_employeeAdded_in_list_with_first_name_as_and_mname_as_and_lName_as(String,String,String)"
 });
+formatter.write("Navigating to Employee List Page.....");
+formatter.write("Searching the newly added amp in the list....");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 29765469400,
+  "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUDSteps.i_click_on_Edit_button_and_update_below_values_and_save_the_Data(DataTable)"
 });
+formatter.write("Editing the searched employee details....");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded4.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 61585377100,
+  "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUDSteps.i_search_the_employee_and_ensure_that_it_is_searched_using_below_values(DataTable)"
 });
+formatter.write("Navigating to Employee List Page to confirm updated values.....");
+formatter.write("Searching the Updated employee Info.....");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded5.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 29699430300,
+  "status": "passed"
 });
 formatter.match({
   "location": "EmployeeCRUDSteps.i_select_and_Delete_the_Updated_Employee_and_verify_employee_is_not_in_search_result()"
 });
+formatter.write("Deleting the searched employee.....");
+formatter.write("Taking a Screenshot.....");
+formatter.embedding("image/png", "embedded6.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 22531717100,
+  "status": "passed"
 });
 formatter.write("Closing the Application");
 formatter.after({
-  "duration": 568761100,
+  "duration": 823497000,
   "status": "passed"
 });
 });
