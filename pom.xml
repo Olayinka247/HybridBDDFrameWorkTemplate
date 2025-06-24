@@ -4,7 +4,7 @@
 	<groupId>BDDCucumberFramework</groupId>
 	<artifactId>BDDCucumberFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -38,6 +38,13 @@
 	</build>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.7.0</version>
+		</dependency>
+
 		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
