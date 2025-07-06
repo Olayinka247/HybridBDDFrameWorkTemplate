@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="34.428" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.runner.Runner" time="31.024" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
@@ -72,5 +72,5 @@
   <testcase name="When I Edit the post with updated comment&quot;sandip&quot;" classname="| OrangeHRM is very good software | 1 | sandip |" time="0"/>
   <testcase name="Then I verify that updated comment&quot;sandip&quot;" classname="| OrangeHRM is very good software | 1 | sandip |" time="0"/>
   <testcase name="Then I delete the Post" classname="| OrangeHRM is very good software | 1 | sandip |" time="0"/>
-  <testcase name="| OrangeHRM is very good software | 1 | sandip |" classname="| OrangeHRM is very good software | 1 | sandip |" time="0.735"/>
+  <testcase name="| OrangeHRM is very good software | 1 | sandip |" classname="| OrangeHRM is very good software | 1 | sandip |" time="0.769"/>
 </testsuite>
