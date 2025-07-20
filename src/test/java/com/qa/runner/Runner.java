@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", glue = { "com.qa.stepdefinations" },tags={"@buzzCRUD5TCS"}, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
-
+@CucumberOptions(features = "src/test/resources/features", glue = { "com.qa.stepdefinations" }, tags = {"@LeaveTypeCrud"}, plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }, monochrome = true)
+//@employeeCRUD5TCS, @buzzCRUD5TCS, 
 public class Runner {
 
 }

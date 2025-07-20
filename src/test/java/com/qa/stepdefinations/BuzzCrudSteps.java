@@ -59,33 +59,54 @@ public class BuzzCrudSteps extends Base {
 	}
 
 	@Then("^verify that comment time user and comment text is posted correctly as \"([^\"]*)\"$")
-	public void verify_that_comment_time_user_and_comment_text_is_posted_correctly_as(String expectedCommentfromFeatureFile) throws Throwable {
+	public void verify_that_comment_time_user_and_comment_text_is_posted_correctly_as(
+			String expectedCommentfromFeatureFile) throws Throwable {
 		scenario.write("Verifying expected comment is equal to actual comment");
 		Assert.assertEquals(expectedCommentfromFeatureFile, objBuzzPage.getpostedComment());
 	}
 
 	@When("^I click on like$")
 	public void i_click_on_like() throws Throwable {
+		scenario.write("Clicking on like button");
+		objBuzzPage.likeComment();
+		WaitMethods.staticWait(5000);
+		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
 
 	}
 
 	@Then("^I verify the like count is updated as Expected count \"([^\"]*)\"$")
-	public void i_verify_the_like_count_is_updated_as_Expected_count(String arg1) throws Throwable {
+	public void i_verify_the_like_count_is_updated_as_Expected_count(String expectedCountfromFeatureFile)
+			throws Throwable {
+
+		scenario.write("Veuirfy the expected count is equal to actual count ");
+		Assert.assertEquals(expectedCountfromFeatureFile + " Like", objBuzzPage.getLikeCount());
 
 	}
 
 	@When("^I Edit the post with updated comment\"([^\"]*)\"$")
-	public void i_Edit_the_post_with_updated_comment(String arg1) throws Throwable {
+	public void i_Edit_the_post_with_updated_comment(String featurefilecommettoAppend) throws Throwable {
+		scenario.write("Edit the posted comment");
+		objBuzzPage.updatePost(featurefilecommettoAppend);
+		WaitMethods.staticWait(5000);
+		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
 
 	}
 
 	@Then("^I verify that updated comment\"([^\"]*)\"$")
-	public void i_verify_that_updated_comment(String arg1) throws Throwable {
+	public void i_verify_that_updated_comment(String appenedText) throws Throwable {
+
+		scenario.write("Verify that entire commnet has appended text ");
+		Assert.assertTrue(objBuzzPage.getpostedComment().contains(appenedText));
 
 	}
 
 	@Then("^I delete the Post$")
 	public void i_delete_the_Post() throws Throwable {
+
+		scenario.write("Deleting the added and updated post ");
+		objBuzzPage.deletePost();
+		WaitMethods.staticWait(5000);
+		scenario.embed(CaptureScreenshot.captureImage(driver), "image/png");
 
 	}
 

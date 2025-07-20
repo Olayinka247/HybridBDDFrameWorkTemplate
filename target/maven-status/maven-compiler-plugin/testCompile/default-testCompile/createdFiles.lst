@@ -2,6 +2,7 @@ com\qa\pages\LoginPage.class
 com\qa\util\ElementActions.class
 com\qa\pages\AddEmployeePage.class
 com\qa\stepdefinations\BuzzCrudSteps.class
+com\qa\stepdefinations\LeaveTypeCRUDSteps.class
 com\qa\util\CaptureScreenshot.class
 com\qa\pages\BuzzPage.class
 com\qa\util\ReadProperties.class
@@ -10,3 +11,4 @@ com\qa\runner\Runner.class
 com\qa\base\Base.class
 com\qa\util\WaitMethods.class
 com\qa\stepdefinations\EmployeeCRUDSteps.class
+com\qa\pages\LeavePage.class

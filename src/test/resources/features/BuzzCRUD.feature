@@ -13,4 +13,4 @@ Feature: Buzz CRUD Operations
 
     Examples: 
       | Comment                         | likecount | updatedComment |
-      | OrangeHRM is very good software |         1 | sandip         |
+      | OrangeHRM is very good software |         1 | Olayinka       |

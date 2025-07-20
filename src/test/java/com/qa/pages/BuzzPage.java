@@ -18,42 +18,33 @@ public class BuzzPage {
 
 	@FindBy(xpath = "//span[text()='Buzz']")
 	WebElement buzPageLink;
-
 	@FindBy(xpath = "//span[@class='oxd-topbar-header-breadcrumb']/child::h6")
 	WebElement buzzPageTitle;
-
 	@FindBy(xpath = "//div[@class='oxd-buzz-post oxd-buzz-post--active']/child::textarea[1]")
 	WebElement commentField;
-
 	@FindBy(xpath = "//button[text()=' Post ']")
 	WebElement postButton;
-
 	@FindBy(xpath = "//div[@class='orangehrm-buzz-post']/following::p[1]")
 	WebElement postedCommentText;
-
 	@FindBy(xpath = "//div[@class='orangehrm-buzz-post-actions']/child::div[1]")
 	WebElement postLikeButton;
-
 	@FindBy(xpath = "//div[@class='orangehrm-buzz-stats']/child::div[1]/child::p")
 	WebElement postCommentCountText;
-
 	@FindBy(xpath = "//div[@class='orangehrm-buzz-post-header-config']/child::li[1]")
 	WebElement editandDeleteMenuButton;
-
 	@FindBy(xpath = "//ul[@class='oxd-dropdown-menu']/li[2]")
 	WebElement editCommentButton;
-
 	@FindBy(xpath = "//p[text()='Edit Post']/following::textarea[1]")
 	WebElement editPostField;
 
-	@FindBy(xpath = "//p[text()='Edit Post']/following::button[1]")
+	@FindBy(xpath = "//div[@class='orangehrm-buzz-photos']/following::button[text()=' Post ']")
 	WebElement editPostPostButton;
 
-	@FindBy(xpath = "//p[text()='Edit Post']/following::button[1]")
+	@FindBy(xpath = "//ul[@class='oxd-dropdown-menu']/li[1]")
 	WebElement deletePostButton;
 
 	@FindBy(xpath = "//button[text()=' Yes, Delete ']")
-	WebElement deleteCommentconfirmButton;
+	WebElement deleteCommentcobfirmButton;
 
 	// page class constructor
 	public BuzzPage(WebDriver driver, Scenario scenario) {
@@ -125,7 +116,7 @@ public class BuzzPage {
 	public void deletePost() {
 		ElementActions.clickElement(driver, editandDeleteMenuButton, scenario);
 		ElementActions.clickElement(driver, deletePostButton, scenario);
-		ElementActions.clickElement(driver, deleteCommentconfirmButton, scenario);
+		ElementActions.clickElement(driver, deleteCommentcobfirmButton, scenario);
 
 	}
 }
